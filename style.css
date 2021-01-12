@@ -56,6 +56,10 @@ html,body{
     min-height: 100%;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     overflow-x: hidden;
 }
@@ -597,9 +601,16 @@ nav #links a:last-child{
 @media(max-width: 500px){
     
     #fscr a{
+        display: flex;
+        align-items: center;
         font-size: 12px;
         text-decoration: none;
         font-weight: 800;
+    }
+
+    #fscr img{
+        width: 20px;
+        margin-right: 10px;
     }
     
     #main{
@@ -807,8 +818,8 @@ nav #links a:last-child{
         font-size: 17px;
     }
     #collab button{
-        padding: 8px 7px;
-        font-size: 7px;
+        padding: 9px 12px;
+        font-size: 10px;
     }
     #banner{
         height: 170px;
